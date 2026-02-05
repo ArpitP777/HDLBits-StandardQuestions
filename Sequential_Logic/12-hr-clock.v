@@ -71,27 +71,3 @@ module BCD1 (
     end
     
 endmodule
-
-/*module BCD2 (
-    input clk,
-    input ena,
-    output reg [7:0] a
-	);
-    
-    always@(posedge clk) begin
-        if(ena) begin
-            if(a[7:4] == 4'd1 && a[3:0] == 4'd2)begin
-                a[7:0] <= 8'd1;
-            end
-            else if(a[3:0] == 4'd9) begin
-                a[7:4] <= a[7:4] + 1;
-                a[3:0] <= 4'd0;
-            end
-            else begin
-                a[3:0] <= a[3:0] + 1; 
-            end
-        end
-    end
-    
-endmodule
-*/
