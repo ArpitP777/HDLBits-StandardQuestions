@@ -66,7 +66,6 @@ module top_module(
             FALL_R : begin
                 if(ground) begin
                     if(count > 19) next = SPLATTER;
-                    else next = WALK_R;
                 end
                 else next = FALL_R;
             end
